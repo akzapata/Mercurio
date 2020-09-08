@@ -393,7 +393,7 @@ public class MercurioPageO  extends PageObject {
 
 	public void validamsjexito(String mensajeregesxito) {
 		
-		mensajeregesxito= "Se ha realizado la acción con éxito";
+		mensajeregesxito= "Se ha realizado la accion con exito";
 		assertThat(msjregexitoso.getText(), containsString(mensajeregesxito));
 		
 			}
