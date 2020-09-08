@@ -46,7 +46,7 @@ Then el ingresa tipo_doc_antes "CC" Num_doc_antes "1234567" tipo_doc_despues "CC
 And da clic en el boton buscar y en el boton actualizar
 And el ve en pantalla el mensaje de cambio de documento exitoso 
 
-
+@P
 Scenario: Menu Clientes / Opcion Datos basicos clientes
 Given que un administrador quiere buscar la informacion de un cliente
 When el ingresa a la opcion datos basicos clientes
