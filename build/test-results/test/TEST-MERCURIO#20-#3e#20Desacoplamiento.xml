@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MERCURIO -&gt; Desacoplamiento" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-08T16:54:16" hostname="PTOF67355" time="25.43">
+  <properties/>
+  <testcase name="Menu Administracion / Opcion mantenimiento /  Opcion item Presupuesto" classname="MERCURIO -&gt; Desacoplamiento" time="25.43"/>
+  <system-out><![CDATA[    ?[32mGiven ?[0m?[32mque un administrador quiere ingresar a Mercurio?[0m ?[90m# MercurioDefinition.queUnAdministradorQuiereIngresarAMercurio()?[0m
+    ?[32mWhen ?[0m?[32mel ingresa usuario "?[0m?[32m?[1mlcuarta7?[0m?[32m" y clave "?[0m?[32m?[1m123?[0m?[32m"?[0m      ?[90m# MercurioDefinition.elIngresaUsuarioYClave(String,String)?[0m
+    ?[32mThen ?[0m?[32mve la pagina principal de Mercurio?[0m               ?[90m# MercurioDefinition.veLaPaginaPrincipalDeMercurio()?[0m
+
+  @Parametro_S @P
+  Scenario: Menu Administracion / Opcion mantenimiento /  Opcion item Presupuesto ?[90m# src/test/resources/Features/Mercurio.feature:35?[0m
+    ?[32mThen ?[0m?[32mel muestra en pantalla el menu Administracion?[0m                            ?[90m# MercurioDefinition.elMuestraEnPantallaElMenuAdministracion()?[0m
+    ?[32mAnd ?[0m?[32mve la opcion Item Presupuesto?[0m                                             ?[90m# MercurioDefinition.veLaOpcionItemPresupuesto()?[0m
+    ?[32mAnd ?[0m?[32mbusca la palabra "?[0m?[32m?[1mcostos?[0m?[32m"?[0m                                                 ?[90m# MercurioDefinition.buscaLaPalabra(String)?[0m
+    ?[32mAnd ?[0m?[32mve la palabra en la tabla de items?[0m                                        ?[90m# MercurioDefinition.veLaPalabraEnLaTablaDeItems()?[0m
+]]></system-out>
+  <system-err><![CDATA[sep 08, 2020 11:54:17 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 5609
+Only local connections are allowed.
+sep 08, 2020 11:54:22 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Menu Administracion / Opcion mantenimiento /  Opcion item Presupuesto
+----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>

@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"MERCURIO -> Desacoplamiento","Menu carnetizacion / Opcion Gestion Carnes","SUCCESS","2020-09-08T10:44:42.875-05:00[America/Bogota]","0.0","16.13"
+"MERCURIO -> Desacoplamiento","Menu carnetizacion / Opcion Solicitud masiva de carnes","SUCCESS","2020-09-08T10:44:59.016-05:00[America/Bogota]","0.0","65.86"
+"MERCURIO -> Desacoplamiento","Menu Administracion / Opcion mantenimiento /  Opcion item Presupuesto","SUCCESS","2020-09-08T10:46:04.876-05:00[America/Bogota]","0.0","8.96"
+"MERCURIO -> Desacoplamiento","Menu Administracion / Opcion Cambio documento","SUCCESS","2020-09-08T10:46:13.835-05:00[America/Bogota]","0.0","9.92"
+"MERCURIO -> Desacoplamiento","Menu Clientes / Opcion Datos basicos clientes","SUCCESS","2020-09-08T10:46:23.759-05:00[America/Bogota]","0.0","20.45"
+"MERCURIO -> Desacoplamiento","Menu Clientes / Opcion Registro de clientes","SUCCESS","2020-09-08T10:46:44.214-05:00[America/Bogota]","0.0","15.74"

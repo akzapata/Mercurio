@@ -1,0 +1,58 @@
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+   				}
+   
+    dependencies {
+       classpath "net.serenity-bdd:serenity-gradle-plugin:1.9.9"
+    //   classpath "net.serenity-bdd:serenity-single-page-report:2.3.4"
+       
+ 
+                  }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator' 
+
+test {	
+ 	useJUnit {							
+		include "**/RunnerTags.class";
+ 		//Sigue ejecutando aunque falle un caso
+		gradle.startParameter.continueOnFailure = true
+		//      
+		testLogging.showStandardStreams = true
+		systemProperties System.getProperties()	   	 	
+	}
+  
+   //Loggin test
+    testLogging {
+        showStandardStreams = true
+    }
+    outputs.upToDateWhen { false }
+    systemProperties 'property': 'value'   
+}                            
+
+dependencies {
+    compile 'net.serenity-bdd:serenity-core:1.9.9'
+    compile 'net.serenity-bdd:serenity-junit:1.9.9'
+    compile 'net.serenity-bdd:serenity-cucumber:1.9.5'
+	compile 'org.apache.poi:poi:3.17'
+	compile 'org.apache.poi:poi-ooxml:3.17'
+    testCompile 'junit:junit:4.12'
+    testCompile('org.assertj:assertj-core:1.7.0')
+    testCompile 'org.slf4j:slf4j-simple:1.7.7'  
+    
+    
+
+}
+
+//serenity {    reports = ["single-page-html"]}
+gradle.startParameter.continueOnFailure = true 
