@@ -31,7 +31,7 @@ Examples:
 	|IDIOMAS				|05-01-2018  |
 	|ARTISTICO			|01-01-2016  | 
 	
-
+@P
 Scenario: Menu Administracion / Opcion mantenimiento /  Opcion item Presupuesto 
 Then el muestra en pantalla el menu Administracion
 And ve la opcion Item Presupuesto
@@ -46,7 +46,7 @@ Then el ingresa tipo_doc_antes "CC" Num_doc_antes "1234567" tipo_doc_despues "CC
 And da clic en el boton buscar y en el boton actualizar
 And el ve en pantalla el mensaje de cambio de documento exitoso 
 
-
+@P
 Scenario: Menu Clientes / Opcion Datos basicos clientes
 Given que un administrador quiere buscar la informacion de un cliente
 When el ingresa a la opcion datos basicos clientes
